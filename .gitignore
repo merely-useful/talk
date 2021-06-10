@@ -1,0 +1,6 @@
+*~
+.DS_Store
+.Rhistory
+.Rproj.user
+.~lock.*
+__pycache__
