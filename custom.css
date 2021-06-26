@@ -4,11 +4,16 @@
 
 body {
     font-family: 'Droid Serif';
+    line-height: 1.5;
 }
 
 h1, h2, h3 {
     font-family: 'Yanone Kaffeesatz';
     font-weight: normal;
+}
+
+h1 {
+    margin-bottom: 0rem;
 }
 
 .remark-code, .remark-inline-code {
@@ -45,4 +50,21 @@ div.flex-row {
 div.flex-col {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+div.wide {
+    width: 40%;
+}
+
+div.narrow {
+    width: 25%;
+}
+
+p.hanging-indent {
+    padding-left: 2rem;
+    text-indent: -2rem;
+}
+
+img.column {
+    width: 100%;
 }
