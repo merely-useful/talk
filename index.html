@@ -84,9 +84,14 @@
 </p>
 
 <p class="hanging-indent">
-  <strong>Sustainable software</strong>:
-  the ease with which to maintain and extend it rather than to replace it;
-  depends on skills and community culture as well as technology.
+  <strong>Software sustainability</strong>:
+  the ease of maintaining and extending it rather than replacing it,
+  which depends on skills and culture as well as technology.
+</p>
+
+<p class="hanging-indent">
+  <strong>Graphic design</strong>:
+  judging from these slides, not so much…
 </p>
 
 ---
@@ -131,9 +136,8 @@
     <p>
       <strong>Sami</strong>:
       BSc in applied math and computer science;
-      works for university's research computing center;
-      supports everything from fluid dynamics to text analysis;
-      wants to build and run data pipelines.
+      works for university's computing center;
+      wants to help researchers build and run data pipelines.
     </p>
   </div>
 </div>
@@ -153,26 +157,228 @@
 
 ---
 
-# Title
+# Main Topics
 
-- Main topics covered: FIXME: insert summary here
+-   Automation
+    -   Unix shell
+    -   Make
+    -   Travis CI
+-   Robust programming
+    -   Command-line Python scripts
+    -   Configuration
+    -   Testing
+    -   Error handling
+    -   Package development
+-   Collaboration
+    -   Git and GitHub
+    -   Data provenance
+    -   Teamwork
+
+<div align="center">
+  <p>
+    <em>
+      Actual order is different so that learners score some early wins.
+    </em>
+  </p>
+</div>
 
 ---
 
-# What did we learn about differences in Python and R?
+# Automation
 
-- Why did we write the python book first? Happenstance! We started out working on them in tandem. We decided we needed to focus on one to complete. The Python book was further along, so we went there.
-- Python book focuses on more general and transferable themes (CI, etc); R applies packages that obscure processes occurring in the background (probably good we finished Python first)
-- Tools taught: Unix in python, but not in R. Interface for Git. Make for automation.
-- Things that are "easy" in one language are not necessarily "easy" in the other
+<ul>
+    <li>The Unix shell is the unavoidable duct tape of research computing
+    <ul>
+        <li>Many other things don't make sense until you've seen it</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Make is past its best-by date
+    <ul>
+        <li>But none of its would-be replacements has achieved critical mass</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>If we were starting over, we'd use GitHub Actions instead of Travis CI
+    <ul>
+        <li>Though we are nervous about how reliant open science is on GitHub</li>
+    </ul>
+</ul>
 
 ---
 
-# What did we learn about writing books?
+# Robust Programming
 
-- It takes longer than you expect
-- Working with small to medium-sized team: modeling collaborative approaches covered in the books, content is not one person's opinion and preferences, but aggregates/averages/smooths over idiosyncrasies of individuals to make a more generalizable story
-- Tools for writing the books: all are difficult, for different reasons
+<div align="center">
+  <p>
+    <em>
+      Based on <a href="https://doi.org/10.1371/journal.pcbi.1005412">Taschuk's Rules</a>
+    </em>
+  </p>
+</div>
+
+<ul>
+    <li>Command-line Python scripts
+    <ul>
+        <li>Assume learners know <code>for</code> loops and functions</li>
+        <li>Show them how to handle command-line arguments, stdin/stdout, etc.</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Configuration
+    <ul>
+        <li>Also serves as a lesson in software design</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Testing
+    <ul>
+        <li>Though we punt on "what tests should I write?"</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Error handling
+    <ul>
+        <li>Because testing is never perfect</li>
+        <li>And neither are people</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Package development
+    <ul>
+        <li>Only for code, not data</li>
+    </ul>
+</ul>
+
+
+---
+
+# Collaboration
+
+<ul>
+    <li>Git and GitHub
+    <ul>
+        <li>From zero to a branch-based workflow</li>
+        <li>You can do a lot with GitHub without using Git</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Data provenance
+    <ul>
+        <li>How to actually implement the <a href="https://www.go-fair.org/fair-principles/">FAIR Principles</a></li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Teamwork
+    <ul>
+        <li>Licensing</li>
+        <li>Issue tracking</li>
+        <li>Running meetings and making decisions</li>
+        <li>Including everyone (especially <a href="https://doi.org/10.1371/journal.pcbi.1007296">newcomers</a>)</li>
+    </ul>
+</ul>
+
+---
+
+# What we learned about Python and R
+
+<ul>
+    <li>Planned to write two books in parallel
+    <ul>
+        <li>Realized we needed to focus on one to complete</li>
+        <li>Python version was further along</li>
+        <li>R version should arrive in 2022</li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Our experience is that:
+    <ol>
+        <li>Python users tend to arrive with more computing skills than R users</li>
+        <li>The tidyverse is easier to teach than Pandas</li>
+    </ol>
+</ul>
+
+<div align="center">
+  <table>
+    <tr><th>Topic</th><th>Python</th><th>R</th></tr>
+    <tr><td>Unix shell</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Make</td><td>Yes</td><td>No</td></tr>
+    <tr><td>Git</td><td>Command line</td><td>GUI</td></tr>
+    <tr><td>Packages</td><td>Code only</td><td>Code and data</td></tr>
+  </table>
+</div>
+
+---
+
+# What we learned about writing books
+
+<div align="center">
+  <p>
+    It takes longer than you expect.
+  </p>
+</div>
+
+---
+
+# What we learned about writing together
+
+-   It's a lot more fun than writing solo
+-   Modeling the collaborative approaches covered in the books
+-   Content is better: not one person's opinion and preferences
+
+---
+
+# What we learned about writing tools
+
+-   All available options are frustrating
+
+---
+
+<div align="center">
+  <h1>Thank you</h1>
+</div>
+
+<div class="flex-row">
+  <div class="flex-col narrow">
+    <p>
+      <img class="column" src="./img/py-rse-cover.jpg" alt="Research Software Engineering with Python (cover)"/>
+    </p>
+  </div>
+  <div class="flex-col">
+    <br/>
+    <table>
+      <tr>
+	<td><a href="https://damienirving.github.io/">Damien Irving</a></td>
+	<td><a href="https://katehertweck.com/">Kate Hertweck</a></td>
+      </tr>
+      <tr>
+	<td><a href="https://lukewjohnston.com/">Luke Johnston</a></td>
+	<td><a href="https://joelostblom.com/">Joel Ostblom</a></td>
+      </tr>
+      <tr>
+	<td><a href="https://www.cwick.co.nz/">Charlotte Wickham</a></td>
+	<td><a href="https://third-bit.com">Greg Wilson</a></td>
+      </tr>
+    </table>
+    <div align="center">
+      <p>
+	<a href="https://www.routledge.com/Research-Software-Engineering-with-Python-Building-software-that-makes/Irving-Hertweck-Johnston-Ostblom-Wickham-Wilson/p/book/9780367698324">Chapman and Hall/CRC, 2021, 978-0367698324</a>
+      </p>
+      <p>
+	<a href="https://merely-useful.tech/py-rse/">https://merely-useful.tech/py-rse/</a>
+      </p>
+    </div>
+  </div>
+</div>
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
